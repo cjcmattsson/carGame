@@ -18,7 +18,8 @@ function colorCircle(centerX,centerY, radius, fillColor) {
 	canvasContext.fill();
 }
 
-function colorText(showWords, textX,textY, fillColor) {
+function colorText(showWords, font, textX,textY, fillColor) {
 	canvasContext.fillStyle = fillColor;
+	canvasContext.font = font;
 	canvasContext.fillText(showWords, textX, textY);
 }
